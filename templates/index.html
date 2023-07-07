@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/index.css') }}" />
+</head>
+<body>
+    <div class="base">
+      <h1 class="heading1">College Of Engineering Perumon</h1>
+      <div class="header">
+        <div class="home">&nbsp;HOME</div>
+        <div class="institute">
+          <select class="add">
+            <option hidden>THE INSTITUTE</option>
+            <option>ABOUT CEP</option>
+            <option>PRINCIPAL</option>
+          </select>
+        </div>
+        <div class="academics">
+          <select class="aca">
+            <option hidden>ACADAMICS</option>
+            <option>ACHIEVEMENTS</option>
+            <option>ADVISORY SYSTEM</option>
+          </select>
+        </div>
+        <div class="administration">
+          <select class="adm">
+            <option hidden>ADMINISTRATION</option>
+            <option>TEQIP-||</option>
+            <option>KTU AFFILIATION</option>
+            <option>AUDIT REPORT</option>
+          </select>
+        </div>
+        <div class="department">
+          <select class="dep">
+            <option hidden>DEPARTMENT</option>
+            <option>CSE</option>
+            <option>ME</option>
+            <option>EEE</option>
+          </select>
+        </div>
+        <div class="facilities">
+          <select class="fac">
+            <option hidden>FACILITIES</option>
+            <option>ASAP</option>
+            <option>IQAC</option>
+            <option>CGPC</option>
+          </select>
+        </div>
+      </div>
+      <label class="announcement">&nbsp;Announcement</label>
+      <marquee class="marq" [hspace]="100">
+        Tender form can be downloaded from college website www.perumonec.ac.in. Seal cover containing (1) Tender form duly signed in all pages, (2) Agreement in non-judicial stamp paper worth Rs.500/-, (3) Tender fee of Rs.600/- + 12% GST by way of DD in favour of Principal, College of Engineering Perumon and (4) EMD of Rs.2510/- by way of DD in favour of Principal, College of Engineering Perumon, (5) Tender schedule shall reach to the College Office on or before 12.04.2023, 4 PM.
+      </marquee>
+      <app-header></app-header>
+      <div class="desc">
+        Greetings to all!
+        As the principal of this esteemed institution, I am proud of our commitment to academic excellence, innovation, and community engagement.
+        Our college provides a welcoming and inclusive environment where all students can thrive and achieve their goals. With our highly qualified faculty and staff, state-of-the-art facilities, and diverse academic programs, we aim to prepare our students for success in their chosen careers and as responsible citizens.
+        I invite you to explore our website and discover what makes our college a special place to learn and grow. We are committed to providing an exceptional educational experience that will shape your future and inspire you to make a positive impact in the world.
+      </div>
+      <img src="{{ url_for('static', filename='assets/images/clg.png') }}" alt="" class="film">
+      <div class="chatbot fadeOut">
+        <div class="chat-header">
+          <h1><b>College Companion</b></h1>
+          <button class="close-btn">&times;</button>
+        </div>
+        <div class="chat-body">
+          <div class="messages">
+            <div class="message received">
+              <p>Hello, how can I help you?</p>
+            </div>
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input type="text" placeholder="Type your message...">
+          <button class="send-btn">Send</button>
+        </div>
+      </div>
+      <div class="icon">
+        <img src="{{ url_for('static', filename='assets/images/bot.jpg') }}" alt="" class="icon">
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='assets/js/index.js') }}"></script>
+</body>
+</html>
